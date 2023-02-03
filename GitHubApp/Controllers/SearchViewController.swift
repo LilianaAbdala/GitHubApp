@@ -21,6 +21,7 @@ class SearchViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         customView.searchButton.addTarget(self, action: #selector(getData), for: .touchUpInside)
+        customView.searchButton.addTarget(self, action: #selector(goProfile), for: .touchUpInside)
     }
     
     @objc func getData() {
@@ -44,5 +45,11 @@ class SearchViewController: UIViewController {
         }
         task.resume()
         semaphore.wait()
+    }
+    
+    @objc func goProfile() {
+        let profile = ProfileViewController()
+        
+        navigationController?.pushViewController(profile, animated: true)
     }
 }

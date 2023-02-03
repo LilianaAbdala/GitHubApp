@@ -8,6 +8,13 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    typealias CustomView = ProfileScreenView
+    let customView = ProfileScreenView()
+    
+    override func loadView() {
+        view = customView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
