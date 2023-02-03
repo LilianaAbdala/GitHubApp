@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct User: Codable {
+    var login: String
+    var avatarUrl: String
+    var reposUrl: String
+    var name: String
+    var publicUrl: String
+}

@@ -1,5 +1,5 @@
 //
-//  BaseView.swift
+//  BaseTableCell.swift
 //  GitHubApp
 //
 //  Created by Liliana Porto Abdala on 03/02/23.
@@ -7,12 +7,10 @@
 
 import UIKit
 
-class BaseView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
+class BaseTableCell: UITableViewCell {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         addSubviews()
-        setConstraints()
     }
     
     required init?(coder: NSCoder) {
@@ -20,11 +18,10 @@ class BaseView: UIView {
     }
     
     func addSubviews() {
-        //  do Nothing
+        setConstraints()
     }
     
     func setConstraints() {
-        // do Nothing
+        // MARK: - Do Nothing
     }
 }
-

@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Repository: Codable {
+    var name: String
+    var language: String
+    var htmlUrl: String
+}
+
