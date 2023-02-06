@@ -36,7 +36,7 @@ class SearchScreenView: BaseView {
     lazy var searchButton: UIButton = {
         let button = UIButton()
         button.setTitle("Search", for: .normal)
-        button.backgroundColor = UIColor.init(rgb: 0xe5e5e5)
+        button.backgroundColor = UIColor.init(rgb: 0x2b3137)
         button.layer.cornerRadius = 10
         return button
     }()

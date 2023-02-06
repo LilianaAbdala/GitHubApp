@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct User: Codable {
+struct UserData: Codable {
     var login: String
     var avatarUrl: String
     var reposUrl: String
     var name: String
-    var publicUrl: String
+    var publicRepos: Int
 }
